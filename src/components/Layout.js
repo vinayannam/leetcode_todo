@@ -57,7 +57,7 @@ export default function Layout({ children }) {
     };
 
     const handleGit = () => {
-        window.open('https://vinayannam.github.io', "_blank")
+        window.open('https://github.com/vinayannam/leetcode_todo', "_blank")
     }
 
     useEffect(()=>{
