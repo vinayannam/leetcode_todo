@@ -15,18 +15,20 @@ const useStyles = makeStyles({
       width: '100%',
     },
     container: {
-      maxHeight: '88.5vh',
-    },
+      maxHeight: '86vh',
+    }
 })
 
 export default function TodoList() {
 
     const classes = useStyles()
-    const columns = ["#", "Title", "Acceptance", "Difficulty", "Done", "Review", "Comment"]
+    
 
     return (
         <GlobalContext.Consumer>
         {(context) => {
+            const currentList = context.todoLists[context.menuSelectedIndex]
+            const columns = [`${currentList.charAt(0).toUpperCase() + currentList.slice(1)} #`, "Title", "Acceptance", "Difficulty", "Done", "Review", "Comment"]
             return  (
                 <div>
                     <TableContainer component={Paper} className={classes.container}>

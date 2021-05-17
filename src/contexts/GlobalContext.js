@@ -8,7 +8,7 @@ class GlobalContextProvider extends Component {
     prefersDarkMode: localStorage.getItem('darkMode') !== null ? JSON.parse(localStorage.getItem('darkMode')) : false,
     anchorMenuEl: null,
     menuSelectedIndex: 0,
-    todoLists: ['amazon', 'bloomberg'],
+    todoLists: ['amazon', 'bloomberg', 'google', 'snapchat'],
     data: null,
     editable: null
   }
