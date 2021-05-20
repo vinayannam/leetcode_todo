@@ -77,7 +77,7 @@ export default function Layout({ children }) {
                         elevation={1}>
                             <Toolbar>
                                 <Grid container spacing={2}>
-                                    <Grid item xs={7}>
+                                    <Grid item xs={6}>
                                         <Typography variant="h5" onClick={() => history.push('/')}>
                                             LEETCODE TODO
                                         </Typography>
@@ -148,7 +148,7 @@ export default function Layout({ children }) {
                                             </Dialog>
                                         </ButtonGroup>
                                     </Grid>
-                                    <Grid item xs={1}>
+                                    <Grid item xs={2}>
                                         <Typography variant="overline">
                                             {context.prefersDarkMode? 'DARK' : 'LIGHT'} 
                                         </Typography>
