@@ -58,7 +58,7 @@ export default function TodoList() {
                                 <TableRow key={i}>
                                 {
                                     row.map((column, j) => (
-                                    <TableCell key={`${i},${j}`} onDoubleClick={(e) => context.updateEditable(i)} onKeyDown={(e) => {if (e.keyCode === 13 ) {context.updateEditable(i); context.updateQuestion(e, i, j, true)}}}>
+                                    <TableCell key={`${i},${j}`} onDoubleClick={(e) => context.updateEditable(i)} onKeyDown={(e) => {if (e.metaKey && e.keyCode === 13 ) {context.updateEditable(i); context.updateQuestion(e, i, j, true)}}}>
                                         {j === 4 ? <Checkbox type="checkbox" checked={column} onChange={(e) => context.updateQuestion(e, i, j, true)} /> : 
 
                                         j === 5 ? <Checkbox type="checkbox" checked={column} onChange={(e) => context.updateQuestion(e, i, j, true)} /> :
